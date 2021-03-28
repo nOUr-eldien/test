@@ -1,18 +1,18 @@
 env: # Environt variable to pass to all tasks
     CIRRUS_CLONE_DEPTH: 1 # No need to clone with whole history
     CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone repo
-    rclone_config: "ENCRYPTED[407b0c2ceb3541bf98e8186aafa3b36389df3e752405cad4d6c3e500612558a49104808faee054535f84db7140e12711]"
-    RSA: "ENCRYPTED[707298372d14cca5dc7ce83d9a7d435e44bf0d5e4114bf792b133ad44a600a1136014437ec2f6f488d27ab33700d32c3]"
-    CHAT: "ENCRYPTED[38e335a198135c696b3d8cc0f15b86ceea4d0f69171a9357e806ae9a8ad942f3db16fd74642a2f11b73404e5360d0a93]"
-    BOT: "ENCRYPTED[904fb548bacc3f7e30948c9befc6241006ec5891818faa6fd7b18e09b4a504bf5bdf80573dae205a935adc9a37019a61]"
+    rclone_config: "ENCRYPTED[73e977798f8b168bd05776b99bc0e57da9832f034130da29a66bf2ce8cdc9fdb2f15dcd4e6bfa933977e402d4c31a866]"
+    RSA: "ENCRYPTED[18c100e68a8fbf3ad2879f8992369e045b19c921bb3c88383da9b2a2f401f62cb115f2525d3acf5b996b992eb46c9667]"
+    CHAT: "ENCRYPTED[53d27659af046815b23b95cd0c4aef002f882e0d21209bb63d2d32dc3fc24b4a154b7de04ee47e5ad2ede6345fc5e231]"
+    BOT: "ENCRYPTED[8926dee278b23df9a65d6a0410e825b6e80f45a3f6bb6ce862bacea00f886346c2f3a235bd6bd9633a147eedcaacffde]"
 
 task:
     name: Hatsune71
     timeout_in: 120m
     container:
       image: apon77/aosp:latest
-      cpu: 16
-      memory: 24G
+      cpu: 8
+      memory: 32G
     download_ccache_background_script:
       - ./download_ccache
     sync_script:
