@@ -6,7 +6,7 @@ nproc
 cat /etc/os*
 env
 
-url=https://server.midonasr.workers.dev/hats/ccache.tar.gz
+url=https://hats-drive.radrive29.workers.dev/ccache/hats/anci/ccache.tar.gz
 
 cd /tmp
 

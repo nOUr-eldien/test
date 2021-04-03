@@ -11,7 +11,7 @@ cd /tmp/rom # Depends on where source got synced
 # lets remove unnecessary things, so that no storage issue can occur
 
 # Normal build steps
-dummy=true # use true for dummy build / use false to final build
+dummy=false # use true for dummy build / use false to final build
 ROM_NAME=Ancient
 BRANCH_MANIFEST=$BRANCH
 DEVICE=ysl
