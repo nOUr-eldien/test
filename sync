@@ -3,7 +3,7 @@
 MANIFEST=git@github.com:Hatsune71/Anci.git
 BRANCH=test
 
-ancient_dev=false
+ancient_dev=true
 
 mkdir -p /tmp/rom
 cd /tmp/rom
@@ -41,9 +41,9 @@ if [ "$ancient_dev" == "true" ]; then
 
 	# Ancient Dev Preview
 	find packages/apps/Settings packages/apps/AncientSettings frameworks/base -delete
-	git clone git@github.com:Ancient-Roms/packages_apps_Settings.git -b xyz_beta4 packages/apps/Settings --depth=1
-	git clone git@github.com:Ancient-Roms/packages_apps_AncientSettings.git -b xyz_beta4 packages/apps/AncientSettings --depth=1
-	git clone git@github.com:Ancient-Roms/frameworks_base.git -b xyz_beta4 frameworks/base --depth=1
+	git clone git@github.com:Ancient-Roms/packages_apps_Settings.git -b kakek15 packages/apps/Settings --depth=1
+	git clone git@github.com:Ancient-Roms/packages_apps_AncientSettings.git -b kakek15 packages/apps/AncientSettings --depth=1
+	git clone git@github.com:Ancient-Roms/frameworks_base.git -b kakek15 frameworks/base --depth=1
 	
 else
 	
