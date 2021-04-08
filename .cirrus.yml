@@ -7,14 +7,14 @@ env: # Environt variable to pass to all tasks
     BOT: "ENCRYPTED[8926dee278b23df9a65d6a0410e825b6e80f45a3f6bb6ce862bacea00f886346c2f3a235bd6bd9633a147eedcaacffde]"
 
 task:
-    name: Hatsune71
+    name: nour
     timeout_in: 120m
     container:
       image: apon77/aosp:latest
       cpu: 8
       memory: 32G
-    download_ccache_background_script:
-      - ./download_ccache
+   # download_ccache_background_script:
+   #   - ./download_ccache
     sync_script:
       - ./sync
     build_script:
