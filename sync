@@ -3,7 +3,7 @@
 MANIFEST=git@github.com:Hatsune71/Anci.git
 BRANCH=test
 
-ancient_dev=true
+ancient_dev=false
 
 mkdir -p /tmp/rom
 cd /tmp/rom
