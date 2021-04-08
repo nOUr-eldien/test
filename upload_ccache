@@ -15,5 +15,5 @@ if [ "$init_rclone" == "true" ]; then
 else
 	mkdir -p ~/.config/rclone
 	echo "$rclone_config" > ~/.config/rclone/rclone.conf
-	time rclone copy ccache.tar.gz gdrive:ccache/hats/anci -P
+	time rclone copy ccache.tar.gz gdrive:ccache/nour/fluid -P
 fi
