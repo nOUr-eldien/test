@@ -12,15 +12,15 @@ cd /tmp/rom # Depends on where source got synced
 
 # Normal build steps
 dummy=false # use true for dummy build / use false to final build
-ROM_NAME=Fluid
+ROM_NAME=bootleg
 BRANCH_MANIFEST=$BRANCH
 DEVICE=ysl
 target_command="bacon"
 BUILDLOG="out/target/product/ysl/ancient_ci.log"
 . build/envsetup.sh
-lunch ancient_ysl-user
-export KBUILD_BUILD_USER=hats-project
-export KBUILD_BUILD_HOST=hats-ci
+lunch bootleg_ysl-user
+export KBUILD_BUILD_USER=nour-project
+export KBUILD_BUILD_HOST=nour-ci
 export JAVA_TOOL_OPTIONS=-Xmx8g
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
